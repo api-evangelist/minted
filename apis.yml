@@ -1,8 +1,26 @@
 aid: minted
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/minted.png
 name: Minted
-description: 'Minted is a company surfaced as a portfolio company of norwest-venture-partners, slow-ventures
-  and added to the API Evangelist network as a stub for enrichment. Sector: unknown. This profile is a
-  lead awaiting the enrichment pipeline.'
+description: 'Minted is a San Francisco-based online design marketplace that crowdsources
+  graphic and fine-art designs from a global community of independent artists and sells
+  the winning work as stationery, wedding invitations, holiday cards, art prints, home
+  decor, and personalized gifts. Its e-commerce storefront at minted.com pairs artist-submitted
+  designs with in-house printing and fulfillment. This profile was surfaced as a portfolio
+  company of Norwest Venture Partners and Slow Ventures and added to the API Evangelist
+  network; the enrichment pass probed for any public developer surface and found no
+  documented public API — Minted operates as a direct-to-consumer commerce brand, not
+  an API provider.'
 url: https://raw.githubusercontent.com/api-evangelist/minted/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,10 +31,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
-- Unknown
+- E-Commerce
+- Marketplace
+- Stationery
+- Design
+- Consumer
+- Retail
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,5 +47,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/minted-domain-security.yml
 - type: Website
   url: https://minted.com
+- type: Support
+  url: https://help.minted.com/
+- type: GitHubOrganization
+  url: https://github.com/minted
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
